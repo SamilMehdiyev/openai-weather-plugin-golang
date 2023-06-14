@@ -1,0 +1,45 @@
+openapi: 3.0.1
+info:
+  title: Weather Plugin
+  description: A plugin that provides the user a real-time, precise weather data. Includes current conditions, forecasts, and historical data using ChatGPT.
+  version: 'v1'
+servers:
+  - url: http://localhost:5004
+paths:
+  /wttr:
+    post:
+      operationId: getCityWttr
+      summary: Get a city weather
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/getCityWttrRequest'
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/getCityWttrResponse'
+
+components:
+  schemas:
+    getCityWttrResponse:
+      type: object
+      properties:
+        currentwttr:
+          type: object
+          items:
+            type: string
+          description: The current weather of the requested city.
+    getCityWttrRequest:
+      type: object
+      required:
+      - city
+      properties:
+        city:
+          type: string
+          description: The name of the city.
+          required: true
