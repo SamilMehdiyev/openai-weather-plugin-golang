@@ -1,6 +1,6 @@
 # OpenAI Plugin Development with Golang: Weather Plugin
 
-This README file provides a step-by-step guide on how to develop your own OpenAI plugin using Golang.
+This README file provides a step-by-step guide on how to develop your own OpenAI plugin using Golang. I have written a detailed article on Medium about this. You can find it [here](https://medium.com/@samil.mehdiyev/how-to-develop-your-own-openai-plugin-using-golang-257d726e7a38)
 
 ## Overview
 
