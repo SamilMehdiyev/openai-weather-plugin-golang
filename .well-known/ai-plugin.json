@@ -1,0 +1,17 @@
+{
+    "schema_version": "v1",
+    "name_for_human": "Weather",
+    "name_for_model": "weather",
+    "description_for_human": "Weather forecasts, nowcasts and history in a fast and elegant way",
+    "description_for_model": "Help the user to check weather details",
+    "auth": {
+        "type": "none"
+    },
+    "api": {
+        "type": "openapi",
+        "url": "http://localhost:5004/openapi.yaml"
+    },
+    "logo_url": "http://localhost:5004/logo.png",
+    "contact_email": "support@example.com",
+    "legal_info_url": "http://www.example.com/legal"
+}
